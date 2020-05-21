@@ -19,3 +19,33 @@
 
 ### http请求
 
+由一系列文本行组成：
+
+* request-line
+  * 请求方法 url http版本
+* header
+  * host
+  * user-agent
+* 一个空行
+* body(可选)
+
+### 安全的请求方法
+
+只是请求信息，不对服务器状态进行修改
+
+### 浏览器对请求方法的支持
+
+get：
+
+* http方法
+
+post：
+
+* 通过添加html表单实现
+* html的form标签中的method属性指定get或post
+
+PUT、Delete：
+
+* XMLHttpRequest（XHR）
+  * 一系列浏览器API
+  * 由Javascript包裹
